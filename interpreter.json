@@ -1,0 +1,183 @@
+{
+  "interpreterSettings": {
+    "2B6QGC4UX": {
+      "id": "2B6QGC4UX",
+      "name": "sh",
+      "group": "sh",
+      "properties": {
+        "shell.command.timeout.millisecs": "60000"
+      },
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.shell.ShellInterpreter",
+          "name": "sh"
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "perNoteSession": false
+      }
+    },
+    "2B5PGUKUQ": {
+      "id": "2B5PGUKUQ",
+      "name": "angular",
+      "group": "angular",
+      "properties": {},
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.angular.AngularInterpreter",
+          "name": "angular"
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "perNoteSession": false
+      }
+    },
+    "2B6U1MESG": {
+      "id": "2B6U1MESG",
+      "name": "flink",
+      "group": "flink",
+      "properties": {
+        "port": "6123",
+        "zeppelin.interpreter.localRepo": "/var/lib/zeppelin/local-repo/2B6U1MESG",
+        "host": "local"
+      },
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.flink.FlinkInterpreter",
+          "name": "flink"
+        }
+      ],
+      "dependencies": [
+        {
+          "groupArtifactVersion": "org.apache.flink:flink-streaming-contrib_2.11:1.3.0",
+          "exclusions": [
+            "org.scala-lang:scala-library",
+            "org.scala-lang:scala-reflect",
+            "org.scala-lang:scala-compiler"
+          ]
+        }
+      ],
+      "option": {
+        "remote": true,
+        "perNoteSession": false
+      }
+    },
+    "2CJDDAPG8": {
+      "id": "2CJDDAPG8",
+      "name": "jdbc",
+      "group": "jdbc",
+      "properties": {
+        "default.password": "",
+        "zeppelin.jdbc.auth.type": "",
+        "common.max_count": "1000",
+        "zeppelin.jdbc.principal": "",
+        "default.user": "gpadmin",
+        "default.url": "jdbc:postgresql://localhost:5432/",
+        "default.driver": "org.postgresql.Driver",
+        "zeppelin.jdbc.keytab.location": "",
+        "zeppelin.jdbc.concurrent.use": "true",
+        "zeppelin.jdbc.concurrent.max_connection": "10"
+      },
+      "status": "READY",
+      "interpreterGroup": [
+        {
+          "name": "sql",
+          "class": "org.apache.zeppelin.jdbc.JDBCInterpreter",
+          "defaultInterpreter": false,
+          "editor": {
+            "language": "sql",
+            "editOnDblClick": false
+          }
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "port": -1,
+        "perNote": "shared",
+        "perUser": "shared",
+        "isExistingProcess": false,
+        "setPermission": false,
+        "users": [],
+        "isUserImpersonate": false
+      }
+    },
+    "2B6FF8NNU": {
+      "id": "2B6FF8NNU",
+      "name": "md",
+      "group": "md",
+      "properties": {},
+      "interpreterGroup": [
+        {
+          "class": "org.apache.zeppelin.markdown.Markdown",
+          "name": "md"
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "perNoteSession": false
+      }
+    },
+    "2B6WW8NRT": {
+      "id": "2B6WW8NRT",
+      "name": "file",
+      "group": "file",
+      "properties": {
+        "hdfs.user": "hdfs",
+        "hdfs.maxlength": "1000",
+        "hdfs.url": "http://localhost:50070/webhdfs/v1/"
+      },
+      "status": "READY",
+      "interpreterGroup": [
+        {
+          "name": "hdfs",
+          "class": "org.apache.zeppelin.file.HDFSFileInterpreter",
+          "defaultInterpreter": false,
+          "editor": {
+            "editOnDblClick": false
+          }
+        }
+      ],
+      "dependencies": [],
+      "option": {
+        "remote": true,
+        "port": -1,
+        "perNote": "shared",
+        "perUser": "shared",
+        "isExistingProcess": false,
+        "setPermission": false,
+        "users": [],
+        "isUserImpersonate": false
+      }
+    }
+  },
+  "interpreterBindings": {
+    "2A94M5J1Z": [
+      "2B6FF8NNU"
+    ]
+  },
+  "interpreterRepositories": [
+    {
+      "id": "central",
+      "type": "default",
+      "url": "http://repo1.maven.org/maven2/",
+      "releasePolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "snapshotPolicy": {
+        "enabled": true,
+        "updatePolicy": "daily",
+        "checksumPolicy": "warn"
+      },
+      "mirroredRepositories": [],
+      "repositoryManager": false
+    }
+  ]
+}
