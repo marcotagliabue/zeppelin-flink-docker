@@ -1,8 +1,7 @@
 Zeppelin and Flink in Docker
 ===============
 
-This is a Docker image appropriate for running a special version of Apache Zeppelin forked by [Radicalbit](https://github.com/radicalbit/) and linked with Apache Flink. 
-Radicalbit improved Apache Zeppelin in order to ease Streaming developement using features of Apache Flink that is the most important real streaming engine.
+This is a Docker image appropriate for running a special version of Apache Zeppelin forked by [Radicalbit](https://github.com/radicalbit/) and linked with Apache Flink. Radicalbit improved Apache Zeppelin in order to ease Streaming developement using features of Apache Flink.
 You can run it locally with docker-compose in which case you get four containers by default:
 * `zeppelin` - runs Zeppelin version forked by Radicalbit inserting one specific example of streaming flink job.
 * `flink-jobmanager` - runs a Flink JobManager in cluster mode and exposes a port for Flink and a port for the WebUI.
