@@ -19,14 +19,11 @@
 version: "2"
 services:
   zeppelin:
-    image: marcotagliabue:zeppelin:0.7.1
+    image: marcotagliabue/zeppelin:0.7.1
     ports:
       - "8080:8080"
     links:
       - jobmanager:flink
-    volumes:
-      - ./notebook:/zeppelin/notebook
-      - ./data:/data
   jobmanager:
     image: maocorte/flink:1.3.0
     hostname: jobmanager
