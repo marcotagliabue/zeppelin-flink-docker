@@ -19,7 +19,7 @@
 version: "2"
 services:
   zeppelin:
-    image: marcotagliabue/zeppelin:latest
+    image: marcotagliabue/zeppelin:0.7.1
     ports:
       - "8080:8080"
     links:
